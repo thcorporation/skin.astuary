@@ -1505,4 +1505,5 @@
 			</control>
 		</focusedlayout>
 	</include>
+    <include file="script-skinshortcuts-includes.xml" />
 </includes>
