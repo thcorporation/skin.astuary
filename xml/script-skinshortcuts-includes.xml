@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="skinshortcuts-mainmenu">
+        <control type="group">
+            <include content="skinshortcuts-template">
+                <param name="level" value="0" />
+                <param name="menu_id" value="mainmenu" />
+            </include>
+        </control>
+    </include>
+
+    <include name="skinshortcuts-template">
+        <definition>
+            <param name="level" default="0" />
+            <param name="menu_id" default="mainmenu" />
+        </definition>
+
+        <control type="list" id="$INFO[Container($PARAM[level]).ListItem.Property(widget_id)]">
+            <include>WidgetList</include>
+        </control>
+    </include>
+</includes>
